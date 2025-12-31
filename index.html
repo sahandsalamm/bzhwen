@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en">
+     <head> 
+        <meta charset="UTF-8">
+         <title>Bzhwen Araz | Medical Profile</title>
+          <style>
+           *{ margin:0; padding:0; box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif; 
+        }
+             /* ===== HERO SECTION ===== */
+              .hero{ height:100vh; background:url('background.jpg') center/cover no-repeat;
+               position:relative; 
+               display:flex; 
+               justify-content:center;
+                align-items:center;
+                 } 
+                 .overlay{ position:absolute; 
+                 inset:0;
+                  background:rgba(0,0,0,0.65); }
+                   .hero-content{ position:relative; 
+                   text-align:center;
+                    color:white;
+                    } 
+                    .profile-img{
+                         width:170px;
+                          height:170px;
+                           border-radius:50%;
+                            object-fit:cover;
+                             border:5px solid #d4a373;
+                              margin-bottom:20px;
+                               box-shadow:0 15px 30px rgba(0,0,0,0.6); }
+                                .hero-content h1{ 
+                                    font-size:55px;
+                                     letter-spacing:4px;
+                                      } 
+                                      .blue{
+                                        color:white;
+                                    }
+                                       .red{
+                                        color:white;
+                                    }
+                                        .white{
+                                            color:white;
+                                        } 
+                                        .hero-content p
+                                        { 
+                                            margin:15px 0 30px;
+                                             font-size:18px;
+                                             }
+                                              .btn{ padding:14px 35px;
+                                               background:#d4a373;
+                                                color:black;
+                                                 text-decoration:none;
+                                                  border-radius:40px; 
+                                                  font-weight:bold; 
+                                                  transition:.3s;
+                                                   } 
+                                                   .btn:hover{
+                                                     background:#fefae0;
+                                                      }
+                                                       /* ===== PROFILE SECTION ===== */ 
+                                                       .profile{
+                                                         background:#0f172a;
+                                                          padding:80px 10%; 
+                                                          } 
+                                                          /* Tabs */ 
+                                                          .tabs{
+                                                             display:flex;
+                                                              justify-content:center;
+                                                               gap:15px;
+                                                                margin-bottom:40px; 
+                                                                flex-wrap:wrap; 
+                                                                } 
+                                                                .tab{
+                                                                     padding:12px 28px;
+                                                                      border:none; 
+                                                                      border-radius:30px;
+                                                                       background:#1f2933;
+                                                                        color:white;
+                                                                         cursor:pointer;
+                                                                          transition:.3s;
+                                                                           }
+                                                                            .tab:hover{
+                                                                                 background:#d4a373;
+                                                                                  color:black;
+                                                                                   } 
+                                                                                   .tab.active{
+                                                                                     background:#d4a373;
+                                                                                      color:black;
+                                                                                       font-weight:bold;
+                                                                                        }
+                                                                                         /* Content */
+                                                                                          .content{ 
+                                                                                            max-width:800px;
+                                                                                            
+                                                                                            margin:auto; }
+                                                                                             .content-box{
+                                                                                                 display:none;
+                                                                                                  background:#111827;
+                                                                                                   padding:30px; 
+                                                                                                   border-radius:20px;
+                                                                                                    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+                                                                                                     color:#e5e7eb;
+                                                                                                      animation:fade .4s ease;
+                                                                                                       } 
+                                                                                                       .content-box.active{ 
+                                                                                                        display:block;
+                                                                                                         }
+                                                                                                          .content-box h2{
+                                                                                                             color:#d4a373;
+                                                                                                              margin-bottom:15px;
+                                                                                                               }
+                                                                                                                .content-box ul{
+                                                                                                                     padding-left:20px; }
+                                                                                                                      .content-box li{
+                                                                                                                         margin-bottom:8px; }
+                                                                                                                          @keyframes fade{
+                                                                                                                             from{opacity:0;transform:translateY(10px);}
+                                                                                                                              to{opacity:1;transform:translateY(0);}
+                                                                                                                               } </style>
+                                                                                                                                </head> 
+                                                                                                                               <body>
+                                                                                                                                 <!-- ===== HERO ===== -->
+                                                                                                                                   <section class="hero"> 
+                                                                                                                                    <div class="overlay"></div> 
+                                                                                                                                    <div class="hero-content"> 
+                                                                                                                                        <img src="profile.jpg" class="profile-img" alt="Bzhwen Araz">
+                                                                                                                                         <h1> <span class="blue">BZH</span><span class="red">WEN</span> <span class="white">ARAZ</span> 
+                                                                                                                                        </h1> <p>Laboratory Assistant – Anesthesia Department</p> 
+                                                                                                                                        <a href="#profile" class="btn">View Profile</a> </div> </section>
+                                                                                                                                         <!-- ===== PROFILE ===== --> 
+                                                                                                                                          <section class="profile" id="profile">
+                                                                                                                                             <div class="tabs"> 
+                                                                                                                                                
+                                                                                                                                            <button class="tab active" onclick="showContent('about',this)">About</button> 
+                                                                                                                                            <button class="tab" onclick="showContent('academic',this)">Academic Degree</button>
+                                                                                                                                             <button class="tab" onclick="showContent('cert',this)">Certifications</button> 
+                                                                                                                                             <button class="tab" onclick="showContent('exp',this)">Experience</button> </div>
+                                                                                                                                              <div class="content"> <div id="about" class="content-box active"> <h2>About Me</h2>
+                                                                                                                                                 <p> Laboratory assistant at Kurdistan Technical Institute, anesthesia department, with strong clinical and academic experience. </p> 
+                                                                                                                                                 <p>Email: Bzhwen.bahadin@kti.edu.iq</p>
+                                                                                                                                                  <p>Personal Email: bzhweinaras@gmail.com</p> </div>
+                                                                                                                                                  <div id="academic" class="content-box"> 
+                                                                                                                                                    <h2>Academic Degree</h2>
+                                                                                                                                                     <ul> 
+                                                                                                                                                        <li>Bachelor of Science in Nursing (BCNs)</li> 
+                                                                                                                                                        <li>Nursing University of Sulaimani</li> 
+                                                                                                                                                        <li>Excellent Grade – Top among 85 students</li> 
+                                                                                                                                                    </ul> </div> <div id="cert" class="content-box">
+                                                                                                                                                         <h2>Certifications</h2>
+                                                                                                                                                          <ul> 
+                                                                                                                                                            <li>Basic ECG and ACL</li>
+                                                                                                                                                             <li>First Aid & BLS</li> 
+                                                                                                                                                             <li>Clinical Pharmacology</li>
+                                                                                                                                                              <li>Brain Activation & Memory Improvement</li> </ul> </div>
+                                                                                                                                                               <div id="exp" class="content-box">
+                                                                                                                                                                 <h2>Professional Experience</h2>
+                                                                                                                                                                  <ul>
+                                                                                                                                                                     <li>Asia International Hospital – Emergency Department</li> 
+                                                                                                                                                                     <li>Shar Hospital – ICU, Neurology, Medical & Trauma</li>
+                                                                                                                                                                      <li>Sulaymaniyah Teaching Hospital – Post EGD & Colonoscopy</li> </ul> </div> </div> </section>
+                                                                                                                                                                       <script> function showContent(id,btn){ document
+                                                                                                                                                                       .querySelectorAll('.content-box')
+                                                                                                                                                                        .forEach(box=>box.classList
+                                                                                                                                                                        .remove('active')); document
+                                                                                                                                                                        .querySelectorAll('.tab') 
+                                                                                                                                                                        .forEach(tab=>tab.classList
+                                                                                                                                                                        .remove('active')); document
+                                                                                                                                                                        .getElementById(id).classList
+                                                                                                                                                                        .add('active'); btn.classList
+                                                                                                                                                                        .add('active');
+                                                                                                                                                                         }
+                                                                                                                                                                          </script>
+                                                                                                                                                                           </body> 
+                                                                                                                                                                           </html>
